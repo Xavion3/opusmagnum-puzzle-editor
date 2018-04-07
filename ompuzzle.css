@@ -1,0 +1,214 @@
+* {
+	font-family: "cormorant" !important;
+}
+div {
+	color: #cccccc;
+	text-shadow: rgba(255, 255, 255, 0.3) 1px 1px;
+}
+
+#invisible-area {
+	display: none;
+}
+
+#content-container {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	width: 1250px;
+	height: 600px;
+}
+
+/* Header */
+
+#big-title {
+	font-size: 32px;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Left Sidebar */
+
+#left-sidebar {
+	float: left;
+	width: 240px;
+}
+
+#meta {
+	font-size: 18px;
+}
+#meta input {
+	font-size: 14px;
+	color: #cccccc;
+}
+
+#toolbox-title {
+	font-size: 18px;
+	text-align: center;
+	height: 1.1em;
+	margin-top: 10px;
+}
+
+#toolbox {
+	width: 230px;
+	height: 241px;
+	border: solid 2px #cccccc;
+}
+.toolbox-prime {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	margin: 3px;
+}
+.toolbox-selected {
+	border-radius: 25px;
+	box-shadow: rgba(255, 255, 175, 0.6) 4px 4px;
+}
+#toolbox-bonds {
+	margin-left: 45px;
+}
+.toolbox-bond {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	margin: 3px;
+}
+.toolbox-bond-selected {
+	box-shadow: rgba(255, 255, 175, 0.6) 4px 4px;
+}
+
+#molecules {
+	margin-top: 5px;
+	width: 250px;
+	height: 200px;
+	
+}
+#reagent-container {
+	width: 120px;
+	float: left;
+}
+#reagent-title {
+	width: 110px;
+	text-align: center;
+	font-size: 14px;
+	top: 0px;
+	left: 0px;
+}
+#reagents {
+	width: 110px;
+	height: 150px;
+	border: solid 2px #cccccc;
+	overflow-y: scroll;
+}
+
+#output-container {
+	width: 120px;
+	float: left;
+}
+#output-title {
+	width: 110px;
+	text-align: center;
+	font-size: 14px;
+}
+#outputs {
+	width: 110px;
+	height: 150px;
+	border: solid 2px #cccccc;
+	overflow-y: scroll;
+}
+
+.reagent-option, .output-option {
+	padding-left: 1px;
+	font-size: 14px;
+	font-weight: normal;
+}
+.reagent-remove, .output-remove {
+	margin-left: 0.5em;
+	color: #888888;
+	font-weight: normal;
+}
+.molecule-highlight {
+	background: #444;
+}
+
+#savelink {
+	width: 240px;
+	text-align: center;
+}
+
+#savelink a {
+	color: #d6ff99;
+}
+
+/* Main Area */
+
+#transmutation {
+	float: left;
+	width: 800px;
+	height: 600px;
+	overflow: scroll;
+	position: relative;
+	margin-left: 15px;
+}
+
+/* Right Sidebar */
+
+#right-sidebar {
+	float: left;
+	margin-left: 15px;
+}
+#inst {
+	width: 170px;
+	height: 600px;
+}
+#inst-title {
+	font-size: 18px;
+	width: 140px;
+	text-align: center;
+	height: 1.1em;
+}
+#inst-box {
+	width: 140px;
+	height: 560px;
+	border: solid 2px #cccccc;
+	padding: 2px;
+}
+.inst-option {
+	display: inline-block;
+	width: 140px;
+	height: 25px;
+	margin-bottom: -5px;
+}
+.inst-checkbox {
+	float: left;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+.inst-label {
+	float: left;
+	font-size: 14px;
+	line-height: 21px;
+	display: inline-block;
+	width: 100px;
+	height: 25px;
+}
+
+/* Footer */
+
+#disclaimer {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	top: 680px;
+	width: 800px;
+	font-size: 18px;
+}
+.disred {
+	color: rgba(255, 155, 155, 0.7);
+}
