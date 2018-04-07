@@ -5,70 +5,54 @@ div {
 	color: #cccccc;
 	text-shadow: rgba(255, 255, 255, 0.3) 1px 1px;
 }
-#big-title {
-	font-size: 32px;
-	position: absolute;
-	top: 12px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-	text-align: center;
+
+#invisible-area {
+	display: none;
 }
+
 #content-container {
-	position: absolute;
-	top: 60px;
-	left: 0;
-	right: 0;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
 	width: 1250px;
-}
-#transmutation {
-	position: absolute;
-	top: 10px;
-	left: 265px;
-	width: 800px;
 	height: 600px;
-	overflow: scroll;
 }
+
+/* Header */
+
+#big-title {
+	font-size: 32px;
+	margin-top: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Left Sidebar */
+
+#left-sidebar {
+	float: left;
+	width: 240px;
+}
+
 #meta {
 	font-size: 18px;
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	width: 260px;
-	height: 100px;
 }
 #meta input {
 	font-size: 14px;
 	color: #cccccc;
 }
-#savelink {
-	position: absolute;
-	top: 575px;
-	left: 10px;
-	width: 240px;
-	text-align: center;
-}
-#savelink a {
-	color: #d6ff99;
-}
+
 #toolbox-title {
 	font-size: 18px;
-	position: absolute;
-	top: 71px;
-	left: 10px;
-	width: 230px;
 	text-align: center;
 	height: 1.1em;
+	margin-top: 10px;
 }
+
 #toolbox {
-	position: absolute;
-	top: 95px;
-	left: 10px;
 	width: 230px;
 	height: 241px;
 	border: solid 2px #cccccc;
@@ -96,65 +80,51 @@ div {
 .toolbox-bond-selected {
 	box-shadow: rgba(255, 255, 175, 0.6) 4px 4px;
 }
+
 #molecules {
-	position: absolute;
-	top: 355px;
-	left: 10px;
+	margin-top: 5px;
 	width: 250px;
 	height: 200px;
 	
 }
+#reagent-container {
+	width: 120px;
+	float: left;
+}
 #reagent-title {
-	position: absolute;
 	width: 110px;
 	text-align: center;
 	font-size: 14px;
 	top: 0px;
 	left: 0px;
-}
-#output-title {
-	position: absolute;
-	width: 110px;
-	text-align: center;
-	font-size: 14px;
-	top: 0px;
-	left: 120px;
 }
 #reagents {
-	position: absolute;
-	top: 22px;
-	left: 0px;
 	width: 110px;
 	height: 150px;
 	border: solid 2px #cccccc;
 	overflow-y: scroll;
+}
+
+#output-container {
+	width: 120px;
+	float: left;
+}
+#output-title {
+	width: 110px;
+	text-align: center;
+	font-size: 14px;
 }
 #outputs {
-	position: absolute;
-	top: 22px;
-	left: 120px;
 	width: 110px;
 	height: 150px;
 	border: solid 2px #cccccc;
 	overflow-y: scroll;
 }
-#reagent-add, #output-add {
-	position: absolute;
-	bottom: 0;
-	left: 5px;
-}
-#output-add {
-	position: absolute;
-	bottom: 0;
-	left: 125px;
-}
+
 .reagent-option, .output-option {
 	padding-left: 1px;
 	font-size: 14px;
 	font-weight: normal;
-}
-.reagent-select, .output-select {
-	
 }
 .reagent-remove, .output-remove {
 	margin-left: 0.5em;
@@ -164,57 +134,74 @@ div {
 .molecule-highlight {
 	background: #444;
 }
+
+#savelink {
+	width: 240px;
+	text-align: center;
+}
+
+#savelink a {
+	color: #d6ff99;
+}
+
+/* Main Area */
+
+#transmutation {
+	float: left;
+	width: 800px;
+	height: 600px;
+	overflow: scroll;
+	position: relative;
+	margin-left: 15px;
+}
+
+/* Right Sidebar */
+
+#right-sidebar {
+	float: left;
+	margin-left: 15px;
+}
 #inst {
-	position: absolute;
-	top: 8px;
-	left: 1080px;
 	width: 170px;
 	height: 600px;
 }
 #inst-title {
 	font-size: 18px;
-	position: absolute;
-	top: 2px;
-	left: 0px;
 	width: 140px;
 	text-align: center;
 	height: 1.1em;
 }
 #inst-box {
-	position: absolute;
-	top: 30px;
-	left: 0px;
 	width: 140px;
 	height: 560px;
 	border: solid 2px #cccccc;
 	padding: 2px;
 }
 .inst-option {
-	position: relative;
 	display: inline-block;
-	width: 150px;
+	width: 140px;
 	height: 25px;
+	margin-bottom: -5px;
 }
 .inst-checkbox {
-	position: absolute;
-	display: block;
+	float: left;
+	display: inline-block;
 	width: 25px;
 	height: 25px;
 }
 .inst-label {
-	position: relative;
-	left: 28px;
-	top: 0px;
+	float: left;
 	font-size: 14px;
 	line-height: 21px;
-	display: block;
+	display: inline-block;
 	width: 100px;
 	height: 25px;
 }
+
+/* Footer */
+
 #disclaimer {
-	position: absolute;
-	left: 0;
-	right: 0;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	clear: both;
@@ -224,7 +211,4 @@ div {
 }
 .disred {
 	color: rgba(255, 155, 155, 0.7);
-}
-#invisible-area {
-	display: none;
 }

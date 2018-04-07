@@ -20,38 +20,42 @@
 	<body>
 		<div id="big-title">Opus Magnum Puzzle Editor</div>
 		<div id="content-container">
-			<div id="savelink">
-				<a id="loadfile">Load</a> | 
-				<a id="savefile">Save Puzzle File</a> | 
-				<a id="dl">DL</a>
-			</div>
-			<div id="meta">
-				<span id="puzzle-name-label">Puzzle Name: </span><input type="text" value="" id="puzzle-name" /><br />
-				<span id="steam-id-label">Steam ID: </span><input type="text" value="" id="steam-id" />
-			</div>
-			<div id="toolbox-title">TOOLBOX</div>
-			<div id="toolbox">
-				<div id="toolbox-primes"></div>
-				<div id="toolbox-bonds"></div>
-			</div>
-			<div id="molecules">
-				<div id="reagent-title">REAGENTS</div>
-				<div id="reagents">
-					
+			<div id="left-sidebar">
+				<div id="meta">
+					<span id="puzzle-name-label">Puzzle Name: </span><input type="text" value="" id="puzzle-name" /><br />
+					<span id="steam-id-label">Steam ID: </span><input type="text" value="" id="steam-id" />
 				</div>
-				<a id="reagent-add">add</a>
-				<div id="output-title">OUTPUTS</div>
-				<div id="outputs">
-					
+				<div id="toolbox-title">TOOLBOX</div>
+				<div id="toolbox">
+					<div id="toolbox-primes"></div>
+					<div id="toolbox-bonds"></div>
 				</div>
-				<a id="output-add">add</a>
+				<div id="molecules">
+					<div id="reagent-container">
+						<div id="reagent-title">REAGENTS</div>
+						<div id="reagents"></div>
+						<a id="reagent-add">add</a>
+					</div>
+					<div id="output-container">
+						<div id="output-title">OUTPUTS</div>
+						<div id="outputs"></div>
+						<a id="output-add">add</a>
+					</div>
+				</div>
+				<div id="savelink">
+					<a id="loadfile">Load</a> | 
+					<a id="savefile">Save Puzzle File</a> | 
+					<a id="dl">DL</a>
+				</div>
 			</div>
 			<div id="transmutation">
 				<svg id="transmutation-svg"></svg>
 			</div>
-			<div id="inst">
-				<div id="inst-title">ITEMS</div>
-				<div id="inst-box"></div>
+			<div id="right-sidebar">
+				<div id="inst">
+					<div id="inst-title">ITEMS</div>
+					<div id="inst-box"></div>
+				</div>
 			</div>
 			<div id="invisible-area">
 				<input type="file" id="file-input" />
